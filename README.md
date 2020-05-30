@@ -15,4 +15,4 @@ A Csharp port of the Lox tree-waliking interpreter from Bob Nystrom’s [*Crafti
 -   object is used instead where jlox uses "Void"
 -   ParseError is not allowed to be static.
 
-That being said, despite not coding less than 100 lines of Java many many years ago (Hello World was enough to make me hate it back then), it is fairly safe to say that Java and C# are very similar. 
+That being said, despite not coding more than 100 lines of Java many many years ago (Hello World was enough to make me hate it back then), it is fairly safe to say that Java and C# are very similar. 
