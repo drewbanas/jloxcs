@@ -423,6 +423,15 @@ namespace jloxcs
                 return text;
             }
 
+            // Csharp bool ToString() Capitalization work around
+            if (object_ is bool)
+            {
+                if ((bool)object_)
+                    return "true";
+                else
+                    return "false";
+            }
+
             return object_.ToString();
         }
 

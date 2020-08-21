@@ -30,7 +30,7 @@ namespace jloxcs
             return null;
         }
 
-        public string toString()
+        public override string ToString()
         {
             return name;
         }

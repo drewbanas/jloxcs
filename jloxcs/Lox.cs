@@ -96,7 +96,7 @@ namespace jloxcs
 
         public static void runtimeError(RuntimeError error)
         {
-            System.Console.WriteLine(error.Message + "\n[line" + error.token.line + "]");
+            System.Console.WriteLine(error.Message + "\n[line " + error.token.line + "]");
             hadRuntimeError = true;
         }
     }

@@ -22,9 +22,9 @@ namespace jloxcs
             return new LoxFunction(declaration, environment, isInitializer);
         }
 
-        public string toString()
+        public override string ToString()
         {
-            return "<fn" + declaration.name.lexeme + ">";
+            return "<fn " + declaration.name.lexeme + ">";
         }
 
         public int arity()

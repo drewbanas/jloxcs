@@ -76,7 +76,7 @@ namespace jloxcs
             ancestor(distance).values[name.lexeme] = value;
         }
 
-        public string toString()
+        public override string ToString()
         {
             string result = values.ToString();
             if (enclosing != null)

@@ -238,7 +238,7 @@ namespace jloxcs
         {
             if (currentClass == ClassType.NONE)
             {
-                Lox.error(expr.keyword, "Cannot use 'this' outside of a class");
+                Lox.error(expr.keyword, "Cannot use 'this' outside of a class.");
                 return null;
             }
 
@@ -313,8 +313,10 @@ namespace jloxcs
             {
                 Lox.error(name, "Variable with this name already declared in this scope.");
             }
-
-            scope.Add(name.lexeme, false);
+            else
+            {
+                scope.Add(name.lexeme, false);
+            }            
         }
 
         private void define(Token name)
@@ -333,7 +335,6 @@ namespace jloxcs
                     interpreter.resolve(expr, scopes.Count - 1 - i);
                     return;
                 }
-
             }
 
             // Not found. Assume it is global.

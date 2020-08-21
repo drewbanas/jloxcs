@@ -18,7 +18,7 @@ namespace jloxcs
             {
                 return (double)System.Environment.TickCount / 1000.0;
             }
-            public string toString()
+            public override string ToString()
             {
                 return "<native fn>";
             }

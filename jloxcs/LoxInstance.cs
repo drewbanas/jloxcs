@@ -28,10 +28,13 @@ namespace jloxcs
 
         public void set(Token name, object value)
         {
-            fields.Add(name.lexeme, value);
+            if (fields.ContainsKey(name.lexeme))
+                fields[name.lexeme] = value;
+            else
+                fields.Add(name.lexeme, value); // fields.put(name.lexeme, value); Java replaces existing
         }
 
-        public string toString()
+        public override string ToString()
         {
             return klass.name + " instance";
         }

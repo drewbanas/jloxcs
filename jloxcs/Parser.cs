@@ -200,7 +200,7 @@ namespace jloxcs
         private Stmt expressionStatement()
         {
             Expr expr = expression();
-            consume(TokenType.SEMICOLON, "Expect ';' after value.");
+            consume(TokenType.SEMICOLON, "Expect ';' after expression.");
             return new Stmt.Expression(expr);
         }
 
